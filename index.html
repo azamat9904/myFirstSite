@@ -7,19 +7,21 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Montserrat:400,700&display=swap&subset=cyrillic-ext" rel="stylesheet">
     <script src="https://kit.fontawesome.com/0d10ce5986.js" crossorigin="anonymous"></script>
+    
 </head>
 <body>
   <div class="page">
-       <header class = "header">
+<!-- HEADER -->
+       <header class = "header" id = "header">
        <div class="container">
            <div class="header__inner">
-               <div class="header__logo">MonGo</div>
-               <nav class = "nav">
-                   <a class = "nav__link" href="#">About</a>
-                   <a class = "nav__link" href="#">Service</a>
-                   <a class = "nav__link" href="#">Block</a>
-                   <a class = "nav__link" href="#">Work</a>
-                   <a class = "nav__link" href="#">Contact</a>
+               <div class="header__logo" data-scroll="#intro">MonGo</div>
+               <nav class = "nav" id = "nav">
+                   <a class = "nav__link" href="#" data-scroll="#about">About</a>
+                   <a class = "nav__link" href="#" data-scroll="#services">Service</a>
+                   <a class = "nav__link" href="#" data-scroll="#blog">Blog</a>
+                   <a class = "nav__link" href="#" data-scroll="#works">Work</a>
+                   <a class = "nav__link" href="#" data-scroll="#footer">Contact</a>
                     <a class = "nav__link" href="#">
                         <i class = "fas fa-shopping-cart"></i>
                     </a>
@@ -27,13 +29,15 @@
                         <i class = "fas fa-search"></i>
                     </a>
                </nav>
-                <button class="nav-toggle" type="button">
+                <button class="nav-toggle" type="button" id = "nav_toggle">
                     <span class="nav-toggle__item">Menu</span>
                 </button>
            </div>
        </div>
    </header>
-    <div class="intro">
+   
+<!-- INTRO -->
+    <div class="intro" id = "intro">
         <div class="container">
             <div class="intro__inner">
                <h2 class="intro__subtitle">Creative Template</h2>
@@ -62,7 +66,9 @@
             </div>
         </div>
     </div>
-    <section class="section">
+    
+<!-- ABOUT -->
+    <section class="section" id="about">
         <div class="container">
             <div class="section__header">
                 <h3 class = "section__subtitle">What we do</h3>
@@ -105,6 +111,8 @@
             </div>
         </div>
     </section>
+    
+<!-- STATISTICS -->
     <div class="statistics">
         <div class="container">
             <div class="statistic">
@@ -151,7 +159,9 @@
             </div>
         </div>
     </div>
-    <section class="section">
+    
+<!-- WORKS-->
+    <section class="section" id = "services">
         <div class="container">
             <div class="section__header">
                 <div class="section__subtitle">We work with</div>
@@ -191,6 +201,8 @@
             </div>
         </div>
     </section>
+    
+<!-- DEVICES-->
     <section class = "section section--devices">
         <div class="section__header">
             <h3 class="section__subtitle">For all devices</h3>
@@ -201,6 +213,8 @@
             </div>  
         </div>
     </section>
+    
+<!--Hobby-->
     <section class="section">
         <div class="container">
             <div class="section__header">
@@ -246,7 +260,9 @@
             </div>
         </div>
     </section>
-    <div class="section section--gray">
+    
+<!-- CARD-->
+    <div class="section section--gray" id = "blog">
         <div class="container">
             <div class="reviews">
                  <a href="#" class = "reviews__btn reviews__btn--prev">Prev</a>
@@ -263,6 +279,8 @@
             </div>
         </div>
     </div>
+    
+<!-- AUTHORS-->
     <section class="section">
         <div class="container">
             <div class="section__header">
@@ -357,6 +375,8 @@
             </div>
         </div>
     </section>
+    
+<!-- GALLERY-->
     <div class="section section--gray">
         <div class="container">
             <div class="logos">
@@ -381,7 +401,9 @@
             </div>
         </div>
     </div>
-    <section class="section">
+    
+<!-- WORKS -->
+    <section class="section" id = "works">
         <div class="container">
             <div class="section__header">
                 <h3 class = "section__subtitle">What we do</h3>
@@ -510,6 +532,7 @@
             </div>
         </div>
     </section>
+<!-- CLIENTS-->
     <section class="section">
          <div class="container">
             <div class="section__header">
@@ -598,6 +621,7 @@
             </div>
         </div>
     </section>
+<!-- MAP -->
     <section class="section section--map">
         <div class="container">
            <div class="map">
@@ -608,7 +632,8 @@
            </div>
         </div>
     </section>
-    <footer class = "footer">
+<!-- FOOTER -->
+    <footer class = "footer" id = "footer">
         <div class="container">
             <div class="footer__inner">
                 <div class="footer__col footer__col--first">
@@ -703,6 +728,7 @@
         </div>
     </footer>
   </div>
-  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src = "assets/js/script.js"></script>
 </body>
 </html>

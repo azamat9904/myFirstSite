@@ -84,6 +84,7 @@ hr{
     width: 100%;
 }
 .header.fixed {
+    padding: 10px 0;
     background-color: #eb8b8d;
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
 
@@ -93,6 +94,9 @@ hr{
     right: 0;
 
     transform: translate3d(0, 0, 0);
+}
+.header.fixed .nav-toggle{
+    top:24px;
 }
 .header.active {
     background-color: #eb8b8d;
@@ -112,6 +116,9 @@ hr{
 .nav{
     font-size: 14px;
     text-transform: uppercase;
+}
+.nav.active{
+    display: block;
 }
 .nav__link{
     display: inline-block;
@@ -134,13 +141,23 @@ hr{
     z-index: 1;
     transition: opacity .3s linear;
 }
-.nav__link:hover::after{
+.nav__link.active{
     opacity: 1;
 }
+.nav__link:hover:after,
+.nav__link.active:after {
+    opacity: 1;
+}
+
+.nav__link.active {
+    color: #fce38a;
+}
+
 .nav__link:hover{
     color:#fce38a;
     transition: color .2s linear;
 }
+
 
 /* Nav toggle */
 .nav-toggle {
@@ -156,11 +173,13 @@ hr{
     cursor: pointer;
 
     position: absolute;
-    top: 24px;
+    top: 42px;
     right: 24px;
     z-index: 1;
 }
-
+.nav-toggle:focus{
+    outline: none;
+}
 .nav-toggle__item {
     display: block;
     width: 100%;
